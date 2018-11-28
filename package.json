@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "DEBUG=app:* nodemon app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.0.0",
+    "debug": "^4.1.0",
+    "express": "^4.16.4",
+    "express-async-errors": "^3.1.1",
+    "http-errors": "^1.7.1",
+    "mongoose": "^5.3.14",
+    "morgan": "^1.9.1"
+  }
+}
