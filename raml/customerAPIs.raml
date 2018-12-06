@@ -4,7 +4,7 @@ title: Customer APIs
 
 /api:
   /customers:
-#   GET api/customer
+    # GET api/customer
     get:
       description: 'get all customers'
       responses:
@@ -21,8 +21,8 @@ title: Customer APIs
                 "error": "internal server error"
               }
 
-  #   POST api/customer/signup
     /signup:
+      # POST api/customer/signup
       post:
         description: 'post a new customer'
         body:
@@ -56,10 +56,10 @@ title: Customer APIs
                   "error": "internal server error"
                 }
 
-    # POST api/customer/signin
     /signin:
+      # POST api/customer/signin
       post:
-        description: 'post a new customer'
+        description: 'signing in a customer'
         body:
           application/json:
             example: {
@@ -70,7 +70,7 @@ title: Customer APIs
             body:
               application/json:
                 example: {
-                  "customer": "already exist"
+                  "customer": "invalid data or user already exist"
                 }
           200:
             body:
@@ -85,22 +85,70 @@ title: Customer APIs
                   "error": "internal server error"
                 }
 
+    /update:
+      # PUT api/customer
+      put:
+        description: "update customer data"
+        body:
+          application/json:
+            example: {
+              "data": "to update"
+            }
+        responses:
+          404:
+            description: "user not found"
+            body:
+              application/json:
+                example: {
+                  "message": "user not found"
+                }
+          200:
+            description: "successfully updated"
+            body:
+              application/json:
+                example: {
+                  "message": "user has been updated successfully"
+                }
 
-#   PUT api/customer
-    put:
-
-#   DELETE api/customer
-    delete:
+    /delete:
+      # DELETE api/customer
+      delete:
+        description: "delete a customer"
+        body:
+          application/json:
+            example: {
+              "data": "for a customer to delete"
+            }
+        responses:
+          404:
+            description: "user not found"
+            body:
+              application/json:
+                example: {
+                  "message": "user not found"
+                }
+          200:
+            description: "successfully deleted"
+            body:
+              application/json:
+                example: {
+                  "message": "user has been deleted successfully"
+                }
 
     /{id}:
-#     GET api/customer/id
+      # GET api/customer/id
       get:
-
-#     POST api/customer/id
-      post:
-
-#     PUT api/customer/id
-      put:
-
-#     DELETE api/customer/id
-      delete:
+        description: "get one customer"
+        responses:
+          404:
+            body:
+              application/json:
+                example: {
+                  "message": "user not found"
+                }
+          200:
+            body:
+              application/json:
+                example: {
+                  "customer": "returned from db"
+                }

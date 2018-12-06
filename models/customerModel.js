@@ -76,6 +76,10 @@ const customerSchema = new Schema({
     city: String,
     postalCode: Number,
     phone: Number
+  },
+  isAdmin: {
+    type: Boolean,
+    default: false
   }
 });
 
@@ -83,14 +87,15 @@ customerSchema.pre('save', async function () {
   this.password = await bcrybt.hash(this.password, 10);
 });
 
-customerSchema.methods.comparePassword = function(password) {
+customerSchema.methods.comparePassword = function (password) {
   return bcrybt.compare(password, this.password);
 };
 
 customerSchema.methods.generateToken = function () {
   const payload = {
     id: this._id,
-    type: this.accountType
+    type: this.accountType,
+    admin: this.isAdmin
   };
 
   return jwt.sign(payload, config.get('secretToken'));

@@ -1,0 +1,124 @@
+#%RAML 1.0
+baseUri: http://localhost:3000
+title: Product APIs
+
+/api:
+  /products:
+    # GET api/products/
+    get:
+      description: 'get all products'
+      responses:
+        200:
+          body:
+            application/json:
+              example: {
+                "products":"to be sent to client"
+              }
+        500:
+          body:
+            application/json:
+              example: {
+                "error": "internal server error"
+              }
+
+    # POST api/products/
+    post:
+      description: 'post a new product'
+      body:
+        application/json:
+          example: {
+            "product": "data to be sent"
+          }
+      responses:
+        401:
+          body:
+            application/json:
+              example: {
+                "invalid": "data"
+              }
+        400:
+          body:
+            application/json:
+              example: {
+                "product": "already exist"
+              }
+        200:
+          body:
+            application/json:
+              example: {
+                "product": "has been successfully saved"
+              }
+        500:
+          body:
+            application/json:
+              example: {
+                "error": "internal server error"
+              }
+
+    /update:
+      # PUT api/products/update
+      put:
+        description: "update product data"
+        body:
+          application/json:
+            example: {
+              "data": "to update"
+            }
+        responses:
+          404:
+            description: "product not found"
+            body:
+              application/json:
+                example: {
+                  "message": "product not found"
+                }
+          200:
+            description: "successfully updated"
+            body:
+              application/json:
+                example: {
+                  "message": "product has been updated successfully"
+                }
+
+    /delete:
+      # DELETE api/products/delete
+      delete:
+        description: "delete a product"
+        body:
+          application/json:
+            example: {
+              "data": "for a product to delete"
+            }
+        responses:
+          404:
+            description: "product not found"
+            body:
+              application/json:
+                example: {
+                  "message": "product not found"
+                }
+          200:
+            description: "successfully deleted"
+            body:
+              application/json:
+                example: {
+                  "message": "product has been deleted successfully"
+                }
+
+    /{id}:
+      # GET api/products/id
+      get:
+        description: "get one product"
+        responses:
+          404:
+            body:
+              application/json:
+                example: {
+                  "message": "product not found"
+                }
+          200:
+            body:
+              application/json:
+                example: {
+                  "product": "returned from db"
+                }

@@ -1,16 +1,16 @@
 const express = require('express');
 const router = express.Router();
 const Customer = require('../models/customerModel');
-const authentication = require('../middlwares/authentication');
-const authorization = require('../middlwares/authorization');
+const {loggedIn} = require('../middlwares/authentication');
+const {isPremium} = require('../middlwares/authorization');
 
 // get all customers
-router.get('/', authentication, async (req, res) => {
+router.get('/', loggedIn, async (req, res) => {
   res.send(await Customer.find());
 });
 
 // get one customer
-router.get('/:id', authentication, async (req, res) => {
+router.get('/:id', loggedIn, async (req, res) => {
   const customer = await Customer.findById(req.params.id);
   if (!customer) return res.status(404).send('User not found');
 
@@ -24,7 +24,7 @@ router.post('/signup', async (req, res) => {
 
   const {username, email} = req.body;
   const existingCustomer = await Customer.findOne({username, email});
-  if (existingCustomer) return res.status(400).send('Customer already exist');
+  if (existingCustomer) return res.status(400).send('User already exist');
 
   const {
     name,
@@ -69,17 +69,16 @@ router.post('/signin', async (req, res) => {
 });
 
 // update an existing customer if the account type is Premium or Enterprise
-router.put('/update', [authentication, authorization], async (req, res) => {
+router.put('/update', [loggedIn, isPremium], async (req, res) => {
   const {id} = req.user;
-  const existingCustomer = await Customer.findById(id);
-  if (!existingCustomer) return res.status(404).send('User not found');
+  if (!await Customer.findById(id)) return res.status(404).send('User not found');
 
   await Customer.updateOne({_id: id}, req.body);
   res.send(await Customer.findById(id));
 });
 
 // delete an existing customer if the account type is Premium or Enterprise
-router.delete('/delete', [authentication, authorization], async (req, res) => {
+router.delete('/delete', [loggedIn, isPremium], async (req, res) => {
   const {id} = req.user;
   const existingCustomer = await Customer.findById(id);
   if (!existingCustomer) return res.status(404).send('User not found');
