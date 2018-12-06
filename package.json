@@ -4,18 +4,26 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "DEBUG=app:* nodemon app"
+    "start": "DEBUG=app:* nodemon app",
+    "test": "jest --watchAll --verbose"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.2",
     "config": "^3.0.0",
     "debug": "^4.1.0",
     "express": "^4.16.4",
     "express-async-errors": "^3.1.1",
     "http-errors": "^1.7.1",
+    "joi": "^14.3.0",
+    "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.3.14",
     "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "supertest": "^3.3.0"
   }
 }

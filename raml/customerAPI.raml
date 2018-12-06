@@ -1,0 +1,106 @@
+#%RAML 1.0
+baseUri: http://localhost:3000
+title: Customer APIs
+
+/api:
+  /customers:
+#   GET api/customer
+    get:
+      description: 'get all customers'
+      responses:
+        200:
+          body:
+            application/json:
+              example: {
+                "customers":"to be sent to client"
+              }
+        500:
+          body:
+            application/json:
+              example: {
+                "error": "internal server error"
+              }
+
+  #   POST api/customer/signup
+    /signup:
+      post:
+        description: 'post a new customer'
+        body:
+          application/json:
+            example: {
+              "customer": "data to be sent"
+            }
+        responses:
+          401:
+            body:
+              application/json:
+                example: {
+                  "invalid": "data"
+                }
+          400:
+            body:
+              application/json:
+                example: {
+                  "customer": "already exist"
+                }
+          200:
+            body:
+              application/json:
+                example: {
+                  "customer": "has been successfully saved"
+                }
+          500:
+            body:
+              application/json:
+                example: {
+                  "error": "internal server error"
+                }
+
+    # POST api/customer/signin
+    /signin:
+      post:
+        description: 'post a new customer'
+        body:
+          application/json:
+            example: {
+              "customer": "data to be sent"
+            }
+        responses:
+          400:
+            body:
+              application/json:
+                example: {
+                  "customer": "already exist"
+                }
+          200:
+            body:
+              application/json:
+                example: {
+                  "customer": "has been successfully saved"
+                }
+          500:
+            body:
+              application/json:
+                example: {
+                  "error": "internal server error"
+                }
+
+
+#   PUT api/customer
+    put:
+
+#   DELETE api/customer
+    delete:
+
+    /{id}:
+#     GET api/customer/id
+      get:
+
+#     POST api/customer/id
+      post:
+
+#     PUT api/customer/id
+      put:
+
+#     DELETE api/customer/id
+      delete:

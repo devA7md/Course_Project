@@ -1,0 +1,42 @@
+#%RAML 1.0
+baseUri: http://localhost:3000
+title: Project
+
+types:
+  customer:
+    type: object
+    properties:
+      name: string
+      username: string
+      email: string
+      phone: number
+      password: string
+      accountType: string
+      address:
+        type: object
+        properties:
+          street: string
+          country: string
+          state: string
+          city: string
+          postalCode: string
+          phone: number
+      creditCart:
+        type: object
+        properties:
+          firstName: string
+          lastName: string
+          cardType: string
+          expiryDate: datetime
+          securityCode: string
+      shippingInfo:
+        type: object
+        properties:
+          street: string
+          country: string
+          state: string
+          city: string
+          postalCode: string
+          phone: number
+      products:
+        type: array

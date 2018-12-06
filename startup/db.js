@@ -3,10 +3,13 @@ const config = require('config');
 const debug = require('debug')('app:db');
 
 const opts = {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useCreateIndex: true
 };
 module.exports = () => {
-  mongoose.connect(config.get('db.URI'), opts)
-    .then(() => debug('Connected to db...'))
+  const db = config.get('db.URI');
+
+  mongoose.connect(db, opts)
+    .then(() => debug(`Connected to ${db}`))
     .catch((err) => debug(err.message))
 };

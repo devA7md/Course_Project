@@ -1,0 +1,19 @@
+#%RAML 1.0
+baseUri: http://localhost:3000
+title: Project
+
+types:
+  product:
+    type: object
+    properties:
+      name: string
+      price: number
+      discount: number
+      productInfo:
+        type: object
+        properties:
+          title: string
+          image: string
+          description: string
+          available: boolean
+          brand: string
