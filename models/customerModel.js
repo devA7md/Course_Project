@@ -111,7 +111,10 @@ customerSchema.statics.signupValidation = function (customer) {
     accountType: Joi.string(),
     address: {
       country: Joi.string().required()
-    }
+    },
+    _id: Joi.string(),
+    products: Joi.array(),
+    isAdmin: Joi.bool()
   };
   return Joi.validate(customer, schema);
 };

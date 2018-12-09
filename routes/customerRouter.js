@@ -13,7 +13,6 @@ router.get('/', loggedIn, async (req, res) => {
 router.get('/:id', loggedIn, async (req, res) => {
   const customer = await Customer.findById(req.params.id);
   if (!customer) return res.status(404).send('User not found');
-
   res.send(customer);
 });
 
@@ -47,7 +46,7 @@ router.post('/signup', async (req, res) => {
 
   const token = customer.generateToken();
   res.header('x-auth-token', token);
-  res.send(token);
+  res.send({token});
 });
 
 // signing in a customer
@@ -83,8 +82,8 @@ router.delete('/delete', [loggedIn, isPremium], async (req, res) => {
   const existingCustomer = await Customer.findById(id);
   if (!existingCustomer) return res.status(404).send('User not found');
 
-  existingCustomer.remove();
-  res.send('removed');
+  await existingCustomer.remove();
+  res.send({message: 'deleted'});
 });
 
 module.exports = router;

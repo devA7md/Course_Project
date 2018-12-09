@@ -6,6 +6,7 @@ const opts = {
   useNewUrlParser: true,
   useCreateIndex: true
 };
+
 module.exports = () => {
   const db = config.get('db.URI');
 
