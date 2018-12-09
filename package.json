@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "DEBUG=app:* nodemon app",
+    "start": "Set DEBUG=app:* nodemon app",
     "test": "jest --watchAll --verbose"
   },
   "keywords": [],
