@@ -4,22 +4,22 @@ const Cart = require('../models/cartModel');
 
 router.post('/', async (req, res) => {
   const {quantity, totalCost, product} = req.body;
-  let cart = new Cart({
+  const cart = new Cart({
     quantity,
     totalCost,
     product
   });
-  let newCart = await cart.save();
+  const newCart = await cart.save();
   res.send(newCart);
 });
 
 router.get('/', async (req, res) => {
-  let cart = await Cart.find().populate('product');
+  const cart = await Cart.find().populate('product');
   res.send(cart);
 
 });
 router.put('/', async (req, res) => {
-  let updatedCart = await Cart.findByIdAndUpdate(req.params.id, req.body);
+  const updatedCart = await Cart.findByIdAndUpdate(req.params.id, req.body);
   res.send(updatedCart);
 });
 

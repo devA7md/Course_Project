@@ -15,10 +15,12 @@ router.post('/', async (req, res) => {
 
   res.send(newOrder);
 });
+
 router.get('/', async (req, res) => {
   const order = await Order.find();
   res.send(order)
 });
+
 router.put('/:id', async (req, res) => {
   const {id} = req.params;
   await Order.updateOne({_id: id}, req.body);
@@ -26,7 +28,8 @@ router.put('/:id', async (req, res) => {
   const UpdatedOrder = await Order.findById(id);
   res.send(UpdatedOrder);
 });
-router.deconste('/:id', async (req, res) => {
+
+router.delete('/:id', async (req, res) => {
   const deconstedOrder = await Order.findByIdAndRemove(req.params.id);
   res.send(deconstedOrder);
 });

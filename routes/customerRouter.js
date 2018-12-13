@@ -52,7 +52,7 @@ router.post('/signup', async (req, res) => {
 // signing in a customer
 router.post('/signin', async (req, res) => {
   const {error} = Customer.loginValidation(req.body);
-  if (error) return res.status(401).send(error.message);
+  if (error) return res.status(400).send(error.message);
 
   const {username, password} = req.body;
 

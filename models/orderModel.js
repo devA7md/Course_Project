@@ -17,11 +17,12 @@ const orderSchema = mongoose.Schema({
     shipmentTracking: {
       type: String,
       required: true,
-      enum: ["preparation", "picked by the courier", "Arriving"]
+      enum: ["Preparation", "Picked by the courier", "Arriving"]
     }
   },
   discount: {
-    type: Number
+    type: Number,
+    default: 0
   },
   totalCost: {
     type: Number,

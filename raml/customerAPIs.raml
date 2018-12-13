@@ -9,12 +9,14 @@ title: Customer APIs
       description: 'get all customers'
       responses:
         200:
+          description: "return 200 and existing users"
           body:
             application/json:
               example: {
                 "customers":"to be sent to client"
               }
         500:
+          description: "return 500 if something internally happened"
           body:
             application/json:
               example: {
@@ -31,25 +33,22 @@ title: Customer APIs
               "customer": "data to be sent"
             }
         responses:
-          401:
-            body:
-              application/json:
-                example: {
-                  "invalid": "data"
-                }
           400:
+            description: "return 400 if user is already exist or invalid data are passed"
             body:
               application/json:
                 example: {
-                  "customer": "already exist"
+                  "customer": "user already exist or invalid data are passed"
                 }
           200:
+            description: "return 200 if user has been saved"
             body:
               application/json:
                 example: {
                   "customer": "has been successfully saved"
                 }
           500:
+            description: "return 500 if something internally happened"
             body:
               application/json:
                 example: {
@@ -70,7 +69,13 @@ title: Customer APIs
             body:
               application/json:
                 example: {
-                  "customer": "invalid data or user already exist"
+                  "customer": "return 400 if invalid data are passed"
+                }
+          404:
+            body:
+              application/json:
+                example: {
+                  "customer": "return 404 if the user is not found"
                 }
           200:
             body:
@@ -95,15 +100,29 @@ title: Customer APIs
               "data": "to update"
             }
         responses:
+          401:
+            description: "return 401 if user is not logged in"
+            body:
+              application/json:
+                example: {
+                  "message": "you have to login"
+                }
+          403:
+            description: "return 403 if user do not have the permission to delete"
+            body:
+              application/json:
+                example: {
+                  "message": "you do not have a permission"
+                }
           404:
-            description: "user not found"
+            description: "return 404 if the user not found"
             body:
               application/json:
                 example: {
                   "message": "user not found"
                 }
           200:
-            description: "successfully updated"
+            description: "return 200 if the user is successfully updated"
             body:
               application/json:
                 example: {
@@ -114,12 +133,23 @@ title: Customer APIs
       # DELETE api/customer
       delete:
         description: "delete a customer"
-        body:
-          application/json:
-            example: {
-              "data": "for a customer to delete"
-            }
+        queryParameters:
+          id:
         responses:
+          401:
+            description: "return 401 if user is not logged in"
+            body:
+              application/json:
+                example: {
+                  "message": "you have to login"
+                }
+          403:
+            description: "return 403 if user do not have the permission to delete"
+            body:
+              application/json:
+                example: {
+                  "message": "you do not have a permission"
+                }
           404:
             description: "user not found"
             body:
@@ -140,13 +170,22 @@ title: Customer APIs
       get:
         description: "get one customer"
         responses:
+          401:
+            description: "return 401 if the user is not logged in"
+            body:
+              application/json:
+                example: {
+                  "message": "you have to login"
+                }
           404:
+            description: "return 404 if user is not found"
             body:
               application/json:
                 example: {
                   "message": "user not found"
                 }
           200:
+            description: "return 200 if user is found"
             body:
               application/json:
                 example: {

@@ -1,7 +1,7 @@
 const auth = require('../../middlwares/authentication');
 const Customer = require('../../models/customerModel');
 
-describe('authorization', () => {
+describe.skip('authorization', () => {
   let req, res, token, next;
 
   token = new Customer().generateToken();

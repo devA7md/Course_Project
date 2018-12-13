@@ -15,6 +15,7 @@ title: Product APIs
                 "products":"to be sent to client"
               }
         500:
+          description: "should return 500 if something internally happened"
           body:
             application/json:
               example: {
@@ -31,24 +32,35 @@ title: Product APIs
           }
       responses:
         401:
+          description: "return 401 if the user is not logged in"
           body:
             application/json:
               example: {
-                "invalid": "data"
+                "message": "you have to login"
+              }
+        403:
+          description: "return 403 if the user is not admin"
+          body:
+            application/json:
+              example: {
+                "message": "you do not have the permission to do this"
               }
         400:
+          description: "return 400 if the product data are invalid"
           body:
             application/json:
               example: {
-                "product": "already exist"
+                "message": "invalid product date"
               }
         200:
+          description: "return 200 if the product has been saved"
           body:
             application/json:
               example: {
-                "product": "has been successfully saved"
+                "message": "has been successfully saved"
               }
         500:
+          description: "return 500 if something internally happened"
           body:
             application/json:
               example: {
@@ -65,15 +77,29 @@ title: Product APIs
               "data": "to update"
             }
         responses:
+          401:
+            description: "return 401 if the user is not logged in"
+            body:
+              application/json:
+                example: {
+                  "message": "you have to login"
+                }
+          403:
+            description: "return 403 if the user is not admin"
+            body:
+              application/json:
+                example: {
+                  "message": "you do not have the permission to do this"
+                }
           404:
-            description: "product not found"
+            description: "return 404 if product not found"
             body:
               application/json:
                 example: {
                   "message": "product not found"
                 }
           200:
-            description: "successfully updated"
+            description: "return 200 if the product id successfully updated"
             body:
               application/json:
                 example: {
@@ -90,15 +116,29 @@ title: Product APIs
               "data": "for a product to delete"
             }
         responses:
+          401:
+            description: "return 401 if the user is not logged in"
+            body:
+              application/json:
+                example: {
+                  "message": "you have to login"
+                }
+          403:
+            description: "return 403 if the user is not admin"
+            body:
+              application/json:
+                example: {
+                  "message": "you do not have the permission to do this"
+                }
           404:
-            description: "product not found"
+            description: "return 404 if the product not found"
             body:
               application/json:
                 example: {
                   "message": "product not found"
                 }
           200:
-            description: "successfully deleted"
+            description: "return 200 if the product is successfully deleted"
             body:
               application/json:
                 example: {
@@ -111,12 +151,14 @@ title: Product APIs
         description: "get one product"
         responses:
           404:
+            description: "return 404 if the product is not found"
             body:
               application/json:
                 example: {
                   "message": "product not found"
                 }
           200:
+            description: "return 200 and send the product"
             body:
               application/json:
                 example: {
