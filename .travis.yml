@@ -5,7 +5,7 @@ dist: trusty
 services:
   - mongodb
 env:
-  - PORT=3000
+  - PORT=3000 NODE_ENV=production
 cache:
   directories:
     - node_module
