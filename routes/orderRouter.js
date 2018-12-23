@@ -1,27 +1,33 @@
 const express = require('express');
 const router = express.Router();
+
 const Order = require('../models/orderModel');
 
-router.post('/', async (req, res) => {
-  const {orderNumber, status, shipmentInfo, discount, totalCost} = req.body;
+const {loggedIn} = require('../middlwares/authentication');
+
+router.get('/', [loggedIn], async (req, res) => {
+  const order = await Order.find()
+    .populate({
+      path: 'products customer'
+    });
+  res.send(order);
+});
+
+router.post('/', loggedIn, async (req, res) => {
+  const {status, shipmentInfo} = req.body,
+    {id} = req.user;
+
   const order = new Order({
-    orderNumber,
     status,
     shipmentInfo,
-    discount,
-    totalCost
+    customer: id
   });
   const newOrder = await order.save();
 
   res.send(newOrder);
 });
 
-router.get('/', async (req, res) => {
-  const order = await Order.find();
-  res.send(order)
-});
-
-router.put('/:id', async (req, res) => {
+router.put('/:id', loggedIn, async (req, res) => {
   const {id} = req.params;
   await Order.updateOne({_id: id}, req.body);
 
@@ -29,9 +35,9 @@ router.put('/:id', async (req, res) => {
   res.send(UpdatedOrder);
 });
 
-router.delete('/:id', async (req, res) => {
-  const deconstedOrder = await Order.findByIdAndRemove(req.params.id);
-  res.send(deconstedOrder);
+router.delete('/:id', loggedIn, async (req, res) => {
+  const deletedOrder = await Order.findByIdAndRemove(req.params.id);
+  res.send(deletedOrder);
 });
 
 module.exports = router;

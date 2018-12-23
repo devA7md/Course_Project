@@ -3,7 +3,7 @@ const request = require('supertest');
 const Customer = require('../../models/customerModel');
 let server, customer, token;
 
-describe.skip('/api/customers', () => {
+describe('/api/customers', () => {
 
   beforeEach(async () => {
     server = require('../../app');
@@ -120,16 +120,6 @@ describe.skip('/api/customers', () => {
         .put('/api/customers/update')
         .send({});
       expect(res.status).toBe(401);
-    });
-
-    test('should return 403 if account type is Standard', async () => {
-      customer.accountType = 'Standard';
-      token = customer.generateToken();
-      const res = await request(server)
-        .put('/api/customers/update')
-        .set('x-auth-token', token)
-        .send({});
-      expect(res.status).toBe(403);
     });
 
     test('should return 404 if customer is not found', async () => {

@@ -13,11 +13,25 @@ const productSchema = new Schema({
     type: Number,
     required: true,
     min: 0,
-    max: 10000
+    max: 10000,
+    get: (v) => {
+      return v;
+    },
+    set: function (v) {
+      return v;
+    }
   },
   discount: {
     type: Number,
     required: true,
+    min: 0,
+    max: 50,
+    get: (v) => {
+      return v;
+    },
+    set: function (v) {
+      return v;
+    }
   },
   productInfo: {
     title: {
@@ -42,6 +56,10 @@ const productSchema = new Schema({
   },
   stock: {
     type: Number
+  },
+  customer: {
+    type: mongoose.ObjectId, // equal to mongoose.Schema.Types.ObjectId
+    ref: 'customer'
   }
 });
 
@@ -58,7 +76,7 @@ productSchema.statics.productValidation = function (customer) {
       brand: Joi.string(),
     }
   };
-  return Joi.validate(customer, schema);
+  return Joi.validate(customer, schema, {allowUnknown: true});
 };
 
 module.exports = mongoose.model('product', productSchema);

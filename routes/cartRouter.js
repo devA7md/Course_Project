@@ -1,31 +1,83 @@
 const express = require('express');
 const router = express.Router();
+
+const {loggedIn} = require('../middlwares/authentication');
+
 const Cart = require('../models/cartModel');
+const Customer = require('../models/customerModel');
 
-router.post('/', async (req, res) => {
-  const {quantity, totalCost, product} = req.body;
-  const cart = new Cart({
-    quantity,
-    totalCost,
-    product
-  });
-  const newCart = await cart.save();
-  res.send(newCart);
+// get the cart based on customer id
+router.get('/mycart', loggedIn, async (req, res) => {
+  const {id} = req.user;
+
+  const cart = await Cart.findOne({customer: id})
+    .select('products -_id')
+    .populate({
+      path: 'products',
+      select: 'name price discount -_id'
+    });
+
+  if (!cart) return res.status(404).send('No cart found');
+
+  const {products, quantity, totalCost} = cart;
+  res.send({products, quantity, totalCost});
 });
 
-router.get('/', async (req, res) => {
-  const cart = await Cart.find().populate('product');
-  res.send(cart);
+// update a cart if it found or create a new one
+router.post('/', loggedIn, async (req, res) => {
+  const {productId} = req.query,
+    customerId = req.user.id;
 
-});
-router.put('/', async (req, res) => {
-  const updatedCart = await Cart.findByIdAndUpdate(req.params.id, req.body);
-  res.send(updatedCart);
+  const customer = await Customer.findById(customerId);
+  if (
+    !(customer.toObject().hasOwnProperty('shippingInfo') &&
+      customer.toObject().hasOwnProperty('creditCard'))
+  )
+    return res.status(400).send('You have to update your shipping and credit card information');
+
+  const existingCart = await Cart.findOne({customer: customerId});
+
+  if (existingCart) {
+    const updatedCart = await Cart
+      .findOneAndUpdate(
+        {customer: customerId},
+        {$push: {products: productId}},
+        {new: true}
+      )
+      .populate({
+        path: 'products',
+        select: 'name price discount -_id'
+      });
+
+    const {products, quantity, totalCost} = updatedCart;
+    res.send({products, quantity, totalCost});
+
+  } else {
+    const cart = new Cart({});
+
+    cart.set('customer', customerId);
+    cart['products'].push(productId);
+
+    await cart.save();
+
+    const savedCart = await Cart.findOne({customer: customerId})
+      .populate({
+        path: 'products',
+        select: 'name price discount -_id'
+      })
+      .select('product -_id');
+
+    const {products, quantity, totalCost} = savedCart;
+    res.send({products, quantity, totalCost});
+  }
 });
 
-router.delete('/:id', async (req, res) => {
-  let deletedCart = await Cart.findByIdAndRemove(req.params.id, req.body);
-  res.send(deletedCart);
+// delete a cart based on customer id
+router.delete('/mycart', loggedIn, async (req, res) => {
+  const {id} = req.user;
+
+  await Cart.deleteOne({customer: id});
+  res.send('Deleted');
 });
 
 module.exports = router;

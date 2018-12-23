@@ -31,7 +31,8 @@ const customerSchema = new Schema({
     required: true,
     validate: {
       validator: function (value) {
-        return value.toString().length <= 16 && value.toString().length >= 6;
+        const strVal = value.toString();
+        return strVal.length <= 16 && strVal.length >= 6;
       },
       message: props => `${props.value} is not valid - must be between 6 - 16`
     }
@@ -111,12 +112,9 @@ customerSchema.statics.signupValidation = function (customer) {
     accountType: Joi.string(),
     address: {
       country: Joi.string().required()
-    },
-    _id: Joi.string(),
-    products: Joi.array(),
-    isAdmin: Joi.bool()
+    }
   };
-  return Joi.validate(customer, schema);
+  return Joi.validate(customer, schema, {allowUnknown: true});
 };
 
 customerSchema.statics.loginValidation = function (customer) {

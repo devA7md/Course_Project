@@ -6,12 +6,20 @@ const {isPremium} = require('../middlwares/authorization');
 
 // get all customers
 router.get('/', loggedIn, async (req, res) => {
-  res.send(await Customer.find());
+  res.send(await Customer.find())
+    .populate({
+      path: 'products',
+      select: 'name -_id'
+    });
 });
 
 // get one customer
 router.get('/:id', loggedIn, async (req, res) => {
-  const customer = await Customer.findById(req.params.id);
+  const customer = await Customer.findById(req.params.id)
+    .populate({
+      path: 'products',
+      select: 'name -_id'
+    });
   if (!customer) return res.status(404).send('User not found');
   res.send(customer);
 });
@@ -64,11 +72,11 @@ router.post('/signin', async (req, res) => {
 
   const token = customer.generateToken();
   res.header('x-auth-token', token);
-  res.send(token);
+  res.send({token});
 });
 
 // update an existing customer if the account type is Premium or Enterprise
-router.put('/update', [loggedIn, isPremium], async (req, res) => {
+router.put('/update', loggedIn, async (req, res) => {
   const {id} = req.user;
   if (!await Customer.findById(id)) return res.status(404).send('User not found');
 

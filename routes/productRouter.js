@@ -1,25 +1,38 @@
 const express = require('express');
 const router = express.Router();
-const Products = require('../models/productModel');
+
+const Product = require('../models/productModel');
+const Customer = require('../models/customerModel');
+
 const {loggedIn} = require('../middlwares/authentication');
 const {isAdmin} = require('../middlwares/authorization');
+const idValidation = require('../middlwares/idValidation');
 
 // get all products
 router.get('/', async (req, res) => {
-  res.send(await Products.find());
+  const allProducts = await Product.find()
+    .populate({
+      path: 'customer',
+      select: 'username -_id'
+    });
+  res.send(allProducts);
 });
 
 // get one product
-router.get('/:id', async (req, res) => {
-  const product = await Products.findById(req.params.id);
+router.get('/:id', idValidation, async (req, res) => {
+  const product = await Product.findById(req.params.id)
+    .populate({
+      path: 'customer',
+      select: 'username -_id'
+    });
   if (!product) return res.status(404).send('Product not found');
 
   res.send(product);
 });
 
-// adding a new product
+// adding a new product if the user is admin
 router.post('/', [loggedIn, isAdmin], async (req, res) => {
-  const {error} = Products.productValidation(req.body);
+  const {error} = Product.productValidation(req.body);
   if (error) return res.status(400).send(error.message);
 
   const {
@@ -28,30 +41,34 @@ router.post('/', [loggedIn, isAdmin], async (req, res) => {
     discount,
     productInfo
   } = req.body;
-  const product = new Products({
+  const product = new Product({
     name,
     price,
     discount,
     productInfo
   });
 
+  const id = req.user.id;
+  await Customer.updateOne({_id: id}, {$push: {products: product._id}});
+  product.set('customer', id);
+
   const savedProduct = await product.save();
   res.send(savedProduct);
 });
 
-// update an existing product
-router.put('/update', [loggedIn, isAdmin], async (req, res) => {
+// update an existing product if logged in and the user is admin
+router.put('/update', [loggedIn, isAdmin, idValidation], async (req, res) => {
   const {id} = req.query;
-  if (!await Products.findById(id)) return res.status(404).send('Product not found');
+  if (!await Product.findById(id)) return res.status(404).send('Product not found');
 
-  await Products.updateOne({_id: id}, req.body);
-  res.send(await Products.findById(id));
+  const updatedProduct = await Product.findOneAndUpdate({_id: id}, req.body, {new: true});
+  res.send(updatedProduct);
 });
 
-// delete an existing product if the account type is Premium or Enterprise
-router.delete('/delete', [loggedIn, isAdmin], async (req, res) => {
+// delete an existing product if logged in and the user is admin
+router.delete('/delete', [loggedIn, isAdmin, idValidation], async (req, res) => {
   const {id} = req.query;
-  const existingProducts = await Products.findById(id);
+  const existingProducts = await Product.findById(id);
   if (!existingProducts) return res.status(404).send('User not found');
 
   existingProducts.remove();

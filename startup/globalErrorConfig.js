@@ -6,7 +6,8 @@ module.exports = (app) => {
     logs.error(err);
 
     const status = err['status'] || 500;
-    debug(status, err['message']);
+    debug(status);
+    debug(err);
 
     res.status(status).send(err['message']);
   });

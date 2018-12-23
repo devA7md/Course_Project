@@ -1,300 +1,48 @@
-{"error":"Not Found","timestamp":"12/8/2018, 6:08:18 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:08:19 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:08:19 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:08:19 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:08:19 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:08:19 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:08:19 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:09:41 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:09:41 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:09:41 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:09:41 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:09:41 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:09:41 PM"}
-{"error":"Not Found","timestamp":"12/8/2018, 6:09:41 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:05:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:05:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:05:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:05:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:05:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:05:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:05:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:34 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:40 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:41 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:41 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:41 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:41 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:41 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:11:41 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:17 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:17 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:17 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:17 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:17 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:17 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:17 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:58 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:58 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:16:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:25:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:25:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:25:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:25:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:25:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:25:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:25:35 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:40 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:40 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:40 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:40 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:40 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:40 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:40 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:53 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:53 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:53 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:53 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:54 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:54 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:26:54 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:15 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:15 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:15 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:15 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:16 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:16 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:16 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:27:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:05 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:06 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:06 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:06 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:06 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:06 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:06 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:58 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:58 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:58 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:30:58 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:32:20 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:32:20 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:32:20 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:32:20 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:34:01 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:34:01 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:34:01 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:34:01 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:34:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:34:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:34:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:34:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:37:32 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:37:32 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:37:32 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:37:32 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:38:13 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:38:13 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:38:13 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:40:37 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:40:37 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:40:37 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:12 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:12 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:12 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:29 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:29 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:29 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:49 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:49 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:49 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:58 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:58 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:41:58 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:42:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:42:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:42:23 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:46:57 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:46:57 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:46:57 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:47:50 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:47:50 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:47:50 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:48:11 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:48:11 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:48:11 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:48:47 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:48:47 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:48:47 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:48:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:48:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:48:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:49:18 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:49:18 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:49:18 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:49:37 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:49:37 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:49:37 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:51:31 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:51:31 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:51:31 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:51:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:51:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:51:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:52:21 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:52:21 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:52:21 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:53:09 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:53:09 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:53:09 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:53:26 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:53:26 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 2:53:26 PM"}
-{"error":"customer validation failed: address.country: Path `address.country` is required., name: Path `name` is required., username: Path `username` is required., email: Path `email` is required., phone: Path `phone` is required., password: Path `password` is required.","timestamp":"12/9/2018, 3:35:36 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:35:37 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:35:37 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:35:37 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:35:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:35:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:35:59 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:44:00 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:44:00 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:44:00 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:52:26 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:52:26 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:52:26 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:54:24 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:54:24 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:54:24 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:54:33 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:54:33 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:54:33 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:56:21 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:56:21 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:56:21 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:56:50 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:56:50 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:56:50 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:57:07 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:57:07 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 3:57:07 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:04:11 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:04:11 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:04:11 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:08:29 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:08:29 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:08:29 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:08:48 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:08:48 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:08:48 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:08:57 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:08:57 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:08:57 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:09:25 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:09:25 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:09:25 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:18:43 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:18:43 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:18:43 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:21:02 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:21:02 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:21:02 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:36:54 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:36:54 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:36:54 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:38:26 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:38:26 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:38:26 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:38:29 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:39:32 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:39:43 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:39:53 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:40:47 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:44:51 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 4:54:28 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 6:47:28 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 6:49:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:33:15 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:33:15 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:33:36 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:33:36 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:47:21 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:47:21 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:49:44 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:49:44 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:51:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:51:42 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:52:17 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:52:17 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:52:51 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 8:52:51 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:02:55 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:07:02 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:07:02 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:07:02 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:07:32 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:07:32 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:07:32 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:07:48 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:07:48 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 9:07:53 PM"}
-{"error":"E11000 duplicate key error collection: project_db_test.customers index: email_1 dup key: { : \"ahmed1@domain.com\" }","timestamp":"12/9/2018, 9:53:34 PM"}
-{"error":"E11000 duplicate key error collection: project_db_test.customers index: email_1 dup key: { : \"ahmed1@domain.com\" }","timestamp":"12/9/2018, 9:56:31 PM"}
-{"error":"E11000 duplicate key error collection: project_db_test.customers index: email_1 dup key: { : \"ahmed1@domain.com\" }","timestamp":"12/9/2018, 9:57:52 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 10:15:05 PM"}
-{"error":"Not Found","timestamp":"12/9/2018, 10:22:20 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 9:22:59 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:45:29 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:45:29 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:46:30 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:47:20 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:47:46 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:49:42 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:50:48 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:51:16 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:52:23 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:52:23 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:52:50 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:52:50 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:52:56 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:52:56 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:00 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:00 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:10 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:10 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:16 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:16 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:39 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:39 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:47 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:47 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:55 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:53:55 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:56:04 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:56:05 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:58:32 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:58:32 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:58:42 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:58:42 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:59:11 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 10:59:12 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 11:00:32 PM"}
-{"error":"Not Found","timestamp":"12/10/2018, 11:00:32 PM"}
-{"error":"Not Found","timestamp":"12/12/2018, 7:05:55 PM"}
-{"error":"Not Found","timestamp":"12/12/2018, 7:05:55 PM"}
+{"error":"E11000 duplicate key error collection: project_db.customers index: email_1 dup key: { : \"ahmed@domain.com\" }","timestamp":"12/17/2018, 12:58:38 AM"}
+{"error":"productSchema.obj is not a function","timestamp":"12/17/2018, 9:13:43 PM"}
+{"error":"Callback must be a function","timestamp":"12/18/2018, 2:33:54 PM"}
+{"error":"product validation failed: price: Cast to Number failed for value \"3500\" at path \"price\"","timestamp":"12/18/2018, 8:04:20 PM"}
+{"error":"Products is not defined","timestamp":"12/18/2018, 8:36:53 PM"}
+{"error":"Products is not defined","timestamp":"12/18/2018, 8:38:23 PM"}
+{"error":"Products is not defined","timestamp":"12/18/2018, 8:39:13 PM"}
+{"error":"Cast to [ObjectId] failed for value \"[{\"$push\":\"5c193f2f2e9d2010ab7e0900\"}]\" at path \"products\"","timestamp":"12/18/2018, 8:40:47 PM"}
+{"error":"Cannot read property 'price' of undefined","timestamp":"12/19/2018, 2:30:34 AM"}
+{"error":"Projection cannot have a mix of inclusion and exclusion.","timestamp":"12/19/2018, 2:39:10 AM"}
+{"error":"Projection cannot have a mix of inclusion and exclusion.","timestamp":"12/19/2018, 2:41:31 AM"}
+{"error":"Cannot read property 'products' of null","timestamp":"12/19/2018, 2:48:43 AM"}
+{"error":"Cannot read property 'products' of null","timestamp":"12/19/2018, 2:49:12 AM"}
+{"error":"Cannot read property 'products' of null","timestamp":"12/19/2018, 2:51:10 AM"}
+{"error":"Cannot read property 'products' of null","timestamp":"12/19/2018, 2:51:27 AM"}
+{"error":"Cannot read property 'products' of null","timestamp":"12/19/2018, 2:51:56 AM"}
+{"error":"Cannot read property 'products' of null","timestamp":"12/19/2018, 2:52:32 AM"}
+{"error":"Cannot read property 'products' of null","timestamp":"12/19/2018, 2:53:13 AM"}
+{"error":"Cannot read property 'products' of null","timestamp":"12/19/2018, 2:53:31 AM"}
+{"error":"existingCart.updateOne is not a function","timestamp":"12/19/2018, 3:54:08 PM"}
+{"error":"existingCart.updateOne is not a function","timestamp":"12/19/2018, 3:55:17 PM"}
+{"error":"Unexpected token ;","timestamp":"12/19/2018, 4:51:12 PM"}
+{"error":"Unexpected token ;","timestamp":"12/19/2018, 4:51:25 PM"}
+{"error":"Cannot destructure property `products` of 'undefined' or 'null'.","timestamp":"12/19/2018, 8:44:05 PM"}
+{"error":"Cannot destructure property `products` of 'undefined' or 'null'.","timestamp":"12/19/2018, 8:45:50 PM"}
+{"error":"order.save(...).populate is not a function","timestamp":"12/20/2018, 1:39:51 PM"}
+{"error":"orders validation failed: shipmentInfo.shipmentTracking: Path `shipmentInfo.shipmentTracking` is required., shipmentInfo.shippingFees: Path `shipmentInfo.shippingFees` is required., orderNumber: Path `orderNumber` is required., status: Path `status` is required.","timestamp":"12/20/2018, 1:39:51 PM"}
+{"error":"orders validation failed: shipmentInfo.shipmentTracking: Path `shipmentInfo.shipmentTracking` is required., shipmentInfo.shippingFees: Path `shipmentInfo.shippingFees` is required., orderNumber: Path `orderNumber` is required., status: Path `status` is required.","timestamp":"12/20/2018, 1:40:07 PM"}
+{"error":"orders validation failed: shipmentInfo.shipmentTracking: Path `shipmentInfo.shipmentTracking` is required., shipmentInfo.shippingFees: Path `shipmentInfo.shippingFees` is required., orderNumber: Path `orderNumber` is required.","timestamp":"12/20/2018, 1:41:15 PM"}
+{"error":"orders validation failed: orderNumber: Path `orderNumber` is required.","timestamp":"12/20/2018, 1:41:33 PM"}
+{"error":"orders validation failed: orderNumber: Path `orderNumber` is required.","timestamp":"12/20/2018, 1:41:45 PM"}
+{"error":"E11000 duplicate key error collection: project_db.orders index: orderNumber_1 dup key: { : null }","timestamp":"12/20/2018, 2:37:15 PM"}
+{"error":"E11000 duplicate key error collection: project_db.orders index: orderNumber_1 dup key: { : null }","timestamp":"12/20/2018, 2:38:56 PM"}
+{"error":"Performing an update on the path '_id' would modify the immutable field '_id'","timestamp":"12/20/2018, 9:16:36 PM"}
+{"error":"Performing an update on the path '_id' would modify the immutable field '_id'","timestamp":"12/20/2018, 9:17:15 PM"}
+{"error":"Performing an update on the path '_id' would modify the immutable field '_id'","timestamp":"12/20/2018, 9:17:38 PM"}
+{"error":"Cannot read property 'push' of undefined","timestamp":"12/20/2018, 9:30:14 PM"}
+{"error":"Cannot read property 'push' of undefined","timestamp":"12/20/2018, 9:30:41 PM"}
+{"error":"newOrder.pre is not a function","timestamp":"12/20/2018, 9:35:13 PM"}
+{"error":"Order.pre is not a function","timestamp":"12/20/2018, 9:35:30 PM"}
+{"error":"Cannot read property 'shippingInfo' of null","timestamp":"12/23/2018, 12:51:14 AM"}
+{"error":"Cannot read property 'shippingInfo' of null","timestamp":"12/23/2018, 12:52:39 AM"}
+{"error":"Cannot read property 'shippingInfo' of null","timestamp":"12/23/2018, 12:53:29 AM"}
+{"error":"Cannot read property 'shippingInfo' of null","timestamp":"12/23/2018, 12:54:05 AM"}
+{"error":"Unexpected token e in JSON at position 249","timestamp":"12/23/2018, 12:30:43 PM"}
+{"error":"Cast to date failed for value \"new Date()\" at path \"creditCard.expiryDate\"","timestamp":"12/23/2018, 12:31:15 PM"}
+{"error":"Unexpected string in JSON at position 233","timestamp":"12/23/2018, 12:31:30 PM"}
+{"error":"Customer.findById(...).toObject is not a function","timestamp":"12/23/2018, 1:37:41 PM"}

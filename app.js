@@ -6,7 +6,7 @@ const app = express();
 const config = require('config');
 const logs = require('./logs');
 const debugServer = require('debug')('app:server');
-const unhandledErrors= require('debug')('app:unhandledErrors');
+const unhandledErrors = require('debug')('app:unhandledErrors');
 
 // listening...
 const port = process.env.PORT || config.get('port');
