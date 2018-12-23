@@ -5,5 +5,3 @@
 /.idea
 
 # files
-/config/production.json
-/config/test.json
