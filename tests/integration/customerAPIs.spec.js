@@ -1,4 +1,3 @@
-const jest = require('jest');
 const request = require('supertest');
 
 const Customer = require('../../models/customerModel');
@@ -7,7 +6,6 @@ let server, customer, token;
 describe('/api/customers', () => {
 
   beforeEach(async () => {
-    jest.setTimeout(30000);
     server = require('../../app');
 
     customer = new Customer({

@@ -1,6 +1,6 @@
 const auth = require('../../middlwares/authorization');
 
-describe.skip('authorization', () => {
+describe('authorization', () => {
   let req, res;
   beforeEach(() => {
     req = {

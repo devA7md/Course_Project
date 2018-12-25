@@ -18,4 +18,5 @@ install dependencies:
 
 run my test:
   stage: test
-  script: npm test
+  script:
+  - npm test
