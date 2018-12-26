@@ -30,7 +30,7 @@ describe('/api/products', () => {
     await server.close();
   });
 
-  describe('GET .../', () => {
+  describe.skip('GET .../', () => {
     test('should get all products', async () => {
       const result = await request(server).get('/api/products');
 
