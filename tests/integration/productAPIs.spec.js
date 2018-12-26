@@ -21,7 +21,7 @@ describe('/api/products', () => {
         brand: 'samsung'
       },
       stock: 95
-    }, 30000);
+    });
 
     await product.save();
   });
@@ -47,26 +47,26 @@ describe('/api/products', () => {
 
       expect(result.status).toBe(400);
       expect(result.text).toBe('Invalid id');
-    });
+    }, 30000);
 
     test('should return 404 if product is not found', async () => {
       await Product.deleteMany();
       const result = await doRequest();
 
       expect(result.status).toBe(404);
-    });
+    }, 30000);
 
     test('should return 200 and get one product', async () => {
       const result = await doRequest();
 
       expect(result.status).toBe(200);
-    });
+    }, 30000);
 
     test('should send the product to client', async () => {
       const result = await doRequest();
 
       expect(result.body).toHaveProperty('name');
-    });
+    }, 30000);
   });
 
   describe('POST .../', () => {
@@ -87,34 +87,34 @@ describe('/api/products', () => {
 
       expect(result.status).toBe(401);
       expect(result.text).not.toBeNull();
-    });
+    }, 30000);
 
     test('should return 403 if the user is not admin', async () => {
       const result = await doRequest({tok: new Customer().generateToken()});
 
       expect(result.status).toBe(403);
       expect(result.text).not.toBeNull();
-    });
+    }, 30000);
 
     test('should return 400 for invalid data provided', async () => {
       const result = await doRequest({token, body: {}});
 
       expect(result.status).toBe(400);
       expect(result.text).not.toBeNull();
-    });
+    }, 30000);
 
     test('should return 200 and save product', async () => {
       const result = await doRequest({token});
 
       expect(result.status).toBe(200);
       expect(result.text).not.toBeNull();
-    });
+    }, 30000);
 
     test('should return the saved product', async () => {
       const result = await doRequest({token});
 
       expect(result.body).toHaveProperty('name');
-    });
+    }, 30000);
   });
 
   describe('PUT .../update', () => {
@@ -134,21 +134,21 @@ describe('/api/products', () => {
     test('should return 401 if the user is not logged in', async () => {
       const result = await doRequest({tok: ''});
       expect(result.status).toBe(401);
-    });
+    }, 30000);
 
     test('should return 403 if the user is not admin', async () => {
       const result = await doRequest({tok: new Customer().generateToken()});
 
       expect(result.status).toBe(403);
       expect(result.text).not.toBeNull();
-    });
+    }, 30000);
 
     test('should return 404 if the product is not found', async () => {
       await Product.deleteMany();
       const result = await doRequest({id: mongoose.Types.ObjectId()});
 
       expect(result.status).toBe(404);
-    });
+    }, 30000);
 
     test('should return 200 if the product has been updated', async () => {
       const result = await doRequest({
@@ -159,7 +159,7 @@ describe('/api/products', () => {
 
       expect(result.status).toBe(200);
       expect(result.body).toHaveProperty('name', 'new name');
-    });
+    }, 30000);
   });
 
   describe('DELETE .../delete', () => {
@@ -178,27 +178,27 @@ describe('/api/products', () => {
     test('should return 401 if the user is not logged in', async () => {
       const result = await doRequest({tok: ''});
       expect(result.status).toBe(401);
-    });
+    }, 30000);
 
     test('should return 403 if the user is not admin', async () => {
       const result = await doRequest({tok: new Customer().generateToken()});
 
       expect(result.status).toBe(403);
       expect(result.text).not.toBeNull();
-    });
+    }, 30000);
 
     test('should return 404 if the product is not found', async () => {
       await Product.deleteMany();
       const result = await doRequest({id: mongoose.Types.ObjectId()});
 
       expect(result.status).toBe(404);
-    });
+    }, 30000);
 
     test('should return 200 if the product has been updated', async () => {
       const result = await doRequest({});
 
       expect(result.status).toBe(200);
       expect(result.text).toBe('removed');
-    });
+    }, 30000);
   });
 });
