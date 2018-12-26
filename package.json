@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "DEBUG=app:* nodemon app",
-    "test": "jest --watchAll"
+    "test": "jest"
   },
   "keywords": [],
   "author": "Ahmed Atia",
