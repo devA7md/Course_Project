@@ -30,12 +30,14 @@ describe('/api/products', () => {
     await server.close();
   });
 
-  describe.skip('GET .../', () => {
-    test('should get all products', async () => {
-      const result = await request(server).get('/api/products');
-
-      expect(result.status).toBe(200);
-      expect(result.body.length).toBe(1);
+  describe('GET .../', () => {
+    test('should get all products', () => {
+      request(server).get('/api/products')
+        .then(result => {
+          expect(result.status).toBe(200);
+          expect(result.body.length).toBe(1);
+        })
+        .catch(ex => console.log(ex.message));
     });
   });
 

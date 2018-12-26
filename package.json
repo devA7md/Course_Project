@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "DEBUG=app:* nodemon app",
-    "test": "jest"
+    "test": "jest --detectOpenHandles",
+    "test:dev": "jest --watchAll --detectOpenHandles"
   },
   "keywords": [],
   "author": "Ahmed Atia",
