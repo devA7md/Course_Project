@@ -20,4 +20,6 @@ run my test:
   stage: test
   script:
   - npm test
-  - exit 0
+
+after_script:
+- exit 0
