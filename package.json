@@ -6,7 +6,7 @@
   "scripts": {
     "start": "DEBUG=app:* nodemon app",
     "test": "jest --detectOpenHandles",
-    "test:dev": "jest --watchAll --detectOpenHandles"
+    "test:dev": "jest --watchAll --verbose"
   },
   "keywords": [],
   "author": "Ahmed Atia",

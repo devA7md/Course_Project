@@ -3,7 +3,7 @@ const request = require('supertest');
 const Customer = require('../../models/customerModel');
 let server, customer, token;
 
-describe('/api/customers', () => {
+describe.skip('/api/customers', () => {
 
   beforeEach(async () => {
     server = require('../../app');

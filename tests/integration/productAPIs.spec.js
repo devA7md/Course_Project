@@ -21,7 +21,7 @@ describe('/api/products', () => {
         brand: 'samsung'
       },
       stock: 95
-    });
+    }, 30000);
 
     await product.save();
   });
@@ -31,13 +31,9 @@ describe('/api/products', () => {
   });
 
   describe('GET .../', () => {
-    test('should get all products', () => {
-      request(server).get('/api/products')
-        .then(result => {
-          expect(result.status).toBe(200);
-          expect(result.body.length).toBe(1);
-        })
-        .catch(ex => console.log(ex.message));
+    test('should get all products', async () => {
+      expect.assertions(1);
+      await expect(request(server).get('/api/products')).resolves.toHaveProperty('status', 200);
     });
   });
 
