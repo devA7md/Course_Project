@@ -1,8 +1,13 @@
-image: node:latest
+image: node:10
 
 stages:
 - build
 - test
+
+variables:
+  DB_URI: 'mongodb://ecommerce:qwerty15@ds026558.mlab.com:26558/project'
+  PORT: 1122
+  SECRET_TOKEN: 'aldjfdhfkasdgkajgljfdghakdsjgasdhfaksdg'
 
 cache:
   paths:
@@ -19,7 +24,7 @@ install dependencies:
 run my test:
   stage: test
   services:
-  - mongo:latest
+  - mongo:4
   script:
   - npm run test:ci
   - exit 0

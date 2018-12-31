@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=development DEBUG=app:* nodemon app",
-    "test:ci": "NODE_ENV=test jest --detectOpenHandles",
+    "test:ci": "NODE_ENV=ci jest --detectOpenHandles",
     "test:dev": "NODE_ENV=test jest --watchAll --verbose"
   },
   "keywords": [],
