@@ -19,5 +19,5 @@ install dependencies:
 run my test:
   stage: test
   script:
-  - npm run test:ci
+  - npm run test:dev
   - exit 0

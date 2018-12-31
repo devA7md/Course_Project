@@ -1,7 +1,7 @@
 {
   "db": {
-    "URI": "mongodb://localhost/project_db_test"
+    "URI": "DB_URI"
   },
-  "port": 3000,
-  "secretToken": "weruiewrl;gkdngfbkxznkjfgangjg$%afqQ#5^afaksdjf"
+  "port": "PORT",
+  "secretToken": "SECRET_TOKEN"
 }
