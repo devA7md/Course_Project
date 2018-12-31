@@ -18,6 +18,8 @@ install dependencies:
 
 run my test:
   stage: test
+  services:
+  - mongo:latest
   script:
-  - npm run test:dev
+  - npm run test:ci
   - exit 0
