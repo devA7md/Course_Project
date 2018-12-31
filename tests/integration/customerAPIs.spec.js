@@ -3,7 +3,7 @@ const request = require('supertest');
 const Customer = require('../../models/customerModel');
 let server, customer, token;
 
-describe.skip('/api/customers', () => {
+describe('/api/customers', () => {
 
   beforeEach(async () => {
     server = require('../../app');
@@ -28,7 +28,7 @@ describe.skip('/api/customers', () => {
   });
 
   // POST api/customers
-  describe('POST /signup', () => {
+  describe.only('POST /signup', () => {
     const exec = () => {
       return request(server)
         .post('/api/customers/signup')
