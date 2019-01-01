@@ -27,7 +27,9 @@ describe('/api/customers', () => {
     await server.close();
   });
 
-  afterAll(() => process.exit(0));
+  afterAll(() => {
+    process.exit();
+  });
 
   // POST api/customers
   describe('POST /signup', () => {
