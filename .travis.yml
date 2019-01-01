@@ -10,6 +10,6 @@ cache:
 install:
   - npm install
 script:
-  - nohup npm start:ci &
+  - nohup npm run start:ci &
   - sleep 3
   - npm run test:ci
