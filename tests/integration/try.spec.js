@@ -28,7 +28,7 @@ describe('/api/customers', () => {
   });
 
   afterAll(() => {
-    process.exit();
+    process.exitCode = 0;
   });
 
   // POST api/customers
