@@ -1,7 +1,7 @@
 {
   "db": {
-    "URI": "DB_URI"
+    "URI": "mongodb://ecommerce:qwerty15@ds026558.mlab.com:26558/project"
   },
-  "port": "PORT",
-  "secretToken": "SECRET_TOKEN"
+  "port": 3000,
+  "secretToken": "aahfdsahfadhgirtiafdsnvgafhgiwahrgakksdjf"
 }
