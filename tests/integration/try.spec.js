@@ -27,6 +27,8 @@ describe('/api/customers', () => {
     await server.close();
   });
 
+  afterAll(() => process.exit(0));
+
   // POST api/customers
   describe('POST /signup', () => {
     const exec = () => {

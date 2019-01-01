@@ -22,4 +22,3 @@ run my test:
   - mongo:4
   script:
   - npm run test:ci
-  - exit 0
