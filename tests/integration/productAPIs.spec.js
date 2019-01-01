@@ -5,7 +5,7 @@ const request = require('supertest');
 
 let server, product, token;
 
-describe.skip('/api/products', () => {
+describe('/api/products', () => {
   beforeEach(async () => {
     server = require('../../app');
 

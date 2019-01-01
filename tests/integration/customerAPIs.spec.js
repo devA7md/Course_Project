@@ -1,10 +1,9 @@
 const request = require('supertest');
-const mongoose = require('mongoose');
 
 const Customer = require('../../models/customerModel');
 let server, customer, token;
 
-describe.skip('/api/customers', () => {
+describe('/api/customers', () => {
 
   beforeEach(async () => {
     server = require('../../app');
@@ -26,7 +25,6 @@ describe.skip('/api/customers', () => {
   afterEach(async () => {
     await Customer.deleteMany();
     await server.close();
-    await mongoose.connection.close();
   });
 
   // POST api/customers
