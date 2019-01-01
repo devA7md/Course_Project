@@ -1,0 +1,7 @@
+{
+  "db": {
+    "URI": "DB_URI"
+  },
+  "port": "PORT",
+  "secretToken": "SECRET_TOKEN"
+}
