@@ -4,8 +4,10 @@
   "description": "demo ecommerce website",
   "main": "app.js",
   "scripts": {
-    "start": "DEBUG=app:* nodemon app",
-    "test": "jest --watchAll"
+    "start": "NODE_ENV=development DEBUG=app:* nodemon app",
+    "start:ci": "DEBUG=app:* node app",
+    "test:ci": "NODE_ENV=test jest --verbose --ci --detectOpenHandles --forceExit",
+    "test:dev": "NODE_ENV=test jest --watchAll --verbose"
   },
   "keywords": [],
   "author": "Ahmed Atia",

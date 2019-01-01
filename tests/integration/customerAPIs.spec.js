@@ -36,10 +36,14 @@ describe('/api/customers', () => {
     };
 
     test('should return 400 if invalid data are passed', async () => {
-      const result = await request(server)
-        .post('/api/customers/signup')
-        .send({});
-      expect(result.status).toBe(400);
+      try {
+        const result = await request(server)
+          .post('/api/customers/signup')
+          .send({});
+        expect(result.status).toBe(400);
+      } catch (e) {
+        console.log(e.message);
+      }
     });
 
     test('should return 400 if user already exist', async () => {

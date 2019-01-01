@@ -8,7 +8,7 @@ cache:
   paths:
   - node_modules/
 
-install_dependencies:
+install dependencies:
   stage: build
   script:
   - npm install
@@ -16,6 +16,9 @@ install_dependencies:
     paths:
     - node_modules/
 
-test_with_lab:
+run my test:
   stage: test
-  script: npm test
+  services:
+  - mongo:4
+  script:
+  - npm run test:ci
