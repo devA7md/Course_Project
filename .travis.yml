@@ -4,8 +4,6 @@ node_js:
 dist: trusty
 services:
   - mongodb
-env:
-  - PORT=3000 NODE_ENV=production
 cache:
   directories:
     - node_module
@@ -14,4 +12,4 @@ install:
 script:
   - nohup npm start &
   - sleep 3
-  - npm run test
+  - npm run test:ci
